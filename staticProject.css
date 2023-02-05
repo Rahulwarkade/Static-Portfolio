@@ -10,17 +10,30 @@ html,body{
 }
 
 #main{
+    position: relative;
     width: 100%;
+    background-image: url("https://i.pinimg.com/originals/46/65/b7/4665b7e99fac93b90f2966de29076653.jpg");
+}
+#mainoverlay{
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.484);
 }
 *::-webkit-scrollbar{
     display: none;
+}
+.nm{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Voyage";
+    font-weight: 500;
 }
 #page0{
     width: 100vw;
     height: 100vh;
     position: relative;
-    /* background-image: url("https://images.unsplash.com/photo-1523371542221-b2965445c8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"); */
-    background-image: url("https://i.pinimg.com/564x/31/0c/63/310c63454e892ccb35941c79d648951e.jpg");
+    /* background-image: url("https://i.pinimg.com/564x/31/0c/63/310c63454e892ccb35941c79d648951e.jpg"); */
     background-size: cover;
     background-position: center;
 }
@@ -29,8 +42,7 @@ html,body{
     height: 100vh;
     position: relative;
     margin-top: 3%;
-    background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg");
-    /* background-image: url("https://images.unsplash.com/photo-1568431040891-ceb87c9847ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1947&q=80"); */
+    /* background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg"); */
     background-size: cover;
     background-position: center;
 }
@@ -39,7 +51,7 @@ html,body{
     height: 100vh;
     position: relative;
     margin-top: 3%;
-    background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg");
+    /* background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg"); */
     /* background-image: url("https://images.unsplash.com/photo-1568431040891-ceb87c9847ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1947&q=80"); */
     background-size: cover;
     background-position: center;
@@ -49,7 +61,7 @@ html,body{
     height: 100vh;
     position: relative;
     margin-top: 3%;
-    background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg");
+    /* background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg"); */
     /* background-image: url("https://images.unsplash.com/photo-1568431040891-ceb87c9847ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1947&q=80"); */
     background-size: cover;
     background-position: center;
@@ -59,7 +71,7 @@ html,body{
     height: 100vh;
     position: relative;
     margin-top: 3%;
-    background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg");
+    /* background-image: url("https://i.pinimg.com/564x/43/80/3a/43803aa7b9603ee9157740c02c024dc8.jpg"); */
     /* background-image: url("https://images.unsplash.com/photo-1568431040891-ceb87c9847ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1947&q=80"); */
     background-size: cover;
     background-position: center;
@@ -525,9 +537,9 @@ html,body{
 
 #info{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 90%;
+    gap: 66px;
 }
 #info i{
     font-size: 30px;
@@ -611,6 +623,16 @@ html,body{
     justify-content: center;
     align-items:  center;
 }
+#pic2{
+    width: 44vw;
+    height: 70vh;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
 #image1{
     width: 80%;
     height: 80%;
@@ -618,9 +640,18 @@ html,body{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 93%);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 93%);
 }
-
 #image1 img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.cc{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.cc h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color : white;
 }
